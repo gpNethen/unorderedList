@@ -1,0 +1,75 @@
+
+
+
+Nathan Reichert
+
+Saint Cloud State University
+
+CSCI 301
+
+Project 5
+
+Doubly Linked List Class
+
+Due:  12 October, 2015
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 5- Doubly Linked List Class
+Due 12 October, 2015
+
+Design Document
+
+Intro:
+      To begin, the problem proposed was to build a Class which utilizes pointers and defined constructs called Nodes to form a Doubly-Linked Unordered List. Once the Unordered List Class was defined and implemented, a way of testing the Class was proposed in the form of a program that takes letter characters and # characters as input, and gave back a respective output.
+Data Structures:
+	This project uses a Class header file and implementation file to define the parts of the Doubly Linked Unordered List Class, as well as a separate program to test and manipulate the Class. Within the Class, pointers are used to keep track of the data put into the List, and the data are organized using defined structures called Nodes, which also utilize pointers (to both the next and previous Items in the list) to help further organize all of the parts of this particular Class.
+Functions:
+	There are six functions defined within the Class itself. The default constructor initializes an empty List. The destructor deletes all of the nodes within a list. The empty function reports whether a List is empty or not. The append function adds an entry to the end of the List. The removeLast function deletes the last entry in a List.	Finally, there is an output function that prints out the contents of a List in forward order.
+Main Program:
+	The main program accepts an input of letter characters and # characters, analyzes the characters, manipulates a Doubly Linked Unordered List in accordance with the characters, and outputs a series of letter characters based on the user’s input.
+
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 5- Doubly Linked List Class
+Due 12 October, 2015
+
+User Document
+
+	The main program gives instructions to the user to input a string of letter characters, and also explains that the # character will delete a letter character before it. Once the input is entered, the program will check it one character at a time, and either append a letter character to the Doubly Linked Unordered List, or delete the letter character that occurs at the very end of the List, respectively. Once all of the characters of the valid input have been analyzed and acted upon, the program will print out the result of the user’s input in the form of the List’s contents in forward order.
+To compile the main program in the CSCI2 unix terminal, enter:  g++ listManip.cpp
+To run the program, after compiling, in the unix terminal, enter: a.out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 5- Doubly Linked List Class
+Due 12 October, 2015
+
+	In summation, this project shows another useful way to use pointers and node data structures to form another type of List Class. The Doubly Linked Unordered List differs quite a bit from the Simple Singly Linked List due to each Node pointing to the next as well as the previous, rather than just pointing in one direction. It is a very useful idea for when the ordering of data is not of so much importance.
+
+	Something specific to this project which I learned is just how convenient and quick it can be to append or remove items of a List that is Doubly Linked. With the Singly Linked List that is sorted, there are more things to consider when appending and deleting data, like finding the specific position where an entry belongs, as well as the special cases of an entry needing to happen in an empty List, or at the beginning, or end of a List.
+
